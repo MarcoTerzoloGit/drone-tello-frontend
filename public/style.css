@@ -1,0 +1,42 @@
+div {
+  border: 1px solid red
+}
+
+html, body {
+	height: 99%;
+}
+
+.main-div {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	display: flex;
+}
+
+
+.top-row {
+	display: flex;
+	flex: 1;
+}
+.bottom-row {
+	display: flex;
+	flex: 1;
+}
+
+
+/* .top-left > div {
+	display: flex;
+	flex: 1;
+}
+.bottom-right {
+	display: flex;
+	flex: 1;
+}
+.top-right {
+	display: flex;
+	flex: 1;
+}
+.bottom-left {
+	display: flex;
+	flex: 1;
+} */
