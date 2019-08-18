@@ -1,9 +1,17 @@
+/* test */
+
 div {
   border: 1px solid red
 }
 
+/* main */
+
 html, body {
 	height: 99%;
+}
+
+h3 {
+	text-align: center;
 }
 
 .main-div {
@@ -11,8 +19,37 @@ html, body {
 	width: 100%;
 	padding: 0px;
 	display: flex;
+	flex-direction: column;
 }
 
+.row-basic {
+	display: flex;
+	flex: 1
+}
+
+.row-basic > div {
+	display: flex;
+	flex: 1;
+}
+
+.col-basic {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.col-basic > div{
+	display: flex;
+	flex: 1;
+
+}
+
+.maxHeight {
+	height: 50;
+	max-height: 50px;
+}
+
+/* horizontal sections */
 
 .top-row {
 	display: flex;
@@ -24,19 +61,52 @@ html, body {
 }
 
 
-/* .top-left > div {
+/* top section */
+
+.top-left {
 	display: flex;
 	flex: 1;
-}
-.bottom-right {
-	display: flex;
-	flex: 1;
+	flex-direction: column;
 }
 .top-right {
 	display: flex;
 	flex: 1;
+	flex-direction: column
 }
+
+
+/* bottom section */
+.bottom-right {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
 .bottom-left {
 	display: flex;
 	flex: 1;
-} */
+}
+
+/* commands section */
+.special-actions {
+	display: flex;
+}
+
+.panel-control {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* components */
+img {
+	max-width: 100%;
+}
+
+.small-image {
+}
+
+.large-image {
+	height: 100%
+}
