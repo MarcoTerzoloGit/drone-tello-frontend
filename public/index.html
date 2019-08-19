@@ -15,15 +15,15 @@
 					<img class="small-image" src="./assets/drone-axis.png" alt="drone tello flight data">
 				</div>
 				<div class="row-basic">
-					<div>pitch: 0</div>
-					<div>roll: 0</div>
-					<div>yaw: 0</div>
-					<div>height: 0m</div>
+					<div id="pitch">pitch: 0</div>
+					<div id="roll">roll: 0</div>
+					<div id="yaw">yaw: 0</div>
+					<div id="height">height: 0m</div>
 				</div>
 			</div>
 			<div class="top-right">
 				<!-- top right - drone camera -->
-				<img class="image large-image" src="./assets/drone_placeholder.jpeg">
+				<img class="image large-image" id="drone-camera" src="./assets/drone_placeholder.jpeg">
 			</div>
 		</div>
 		<div class="bottom-row">
@@ -102,6 +102,8 @@
 
 		</div>
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
 	<script src="./js/script.js"></script>
+	<script src="./js/sockets.js"></script>
 </body>
 </html>
