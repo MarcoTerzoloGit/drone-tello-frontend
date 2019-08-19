@@ -14,9 +14,6 @@
 				<div>
 					<img class="small-image" src="./assets/drone-axis.png" alt="drone tello flight data">
 				</div>
-				<p>
-					drone stats
-				</p>
 				<div class="row-basic">
 					<div>pitch: 0</div>
 					<div>roll: 0</div>
@@ -30,8 +27,25 @@
 			</div>
 		</div>
 		<div class="bottom-row">
-			<div class="bottom-left">
-				bottom left - battery and other stats
+			<div class="bottom-left col-basic">
+
+				<div class="row-basic">
+					<div>
+						weather: TODO
+						<canvas id="world" width="450" height="300" ><p class="noCanvas">You need a <a href="http://www.google.com/chrome">modern browser</a> to view this.</p></canvas>
+						
+					</div>
+					<div class="battery-container">
+						<div class="battery-top"></div>
+						<div class="battery-content">
+							<div class="battery-level"></div>
+							<div class="battery-stat">45%</div>
+						</div>
+					</div>
+				</div>
+				<div class="maxHeight">status: disconnected</div>
+
+
 			</div>
 
 			<div class="bottom-right">
@@ -88,5 +102,6 @@
 
 		</div>
 	</div>
+	<script src="./js/script.js"></script>
 </body>
 </html>

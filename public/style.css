@@ -99,6 +99,40 @@ h3 {
 	justify-content: center;
 }
 
+/* stats settings */
+
+.battery-container {
+	flex-direction: column;
+	/* align-items: center; */
+	padding: 20px;
+	max-width: 240px;
+}
+
+.battery-top {
+	height: 24px;
+	width: 72px;
+	align-self: center
+}
+
+.battery-content {
+	display: flex;
+	align-items: flex-end;
+	flex: 1;
+	position: relative;
+}
+
+.battery-stat {
+	position: absolute;
+	top: 45%;
+	left: 45%;
+}
+
+.battery-level {
+	height: 45%;
+	width: 100%;
+	background-color: orange
+}
+
 /* components */
 img {
 	max-width: 100%;
