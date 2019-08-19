@@ -10,17 +10,22 @@
 <body>
 	<div class="main-div">
 		<div class="top-row">
+
 			<div class="top-left">
-				<div>
-					<img class="small-image" src="./assets/drone-axis.png" alt="drone tello flight data">
+				<div class="fill">
+					<div class="perspective">
+						<img class="small-image drone-axys" id="droneAxys" src="./assets/drone-axis.png" alt="drone tello flight data">
+					</div>
 				</div>
-				<div class="row-basic">
+				<div class="row-basic maxHeight">
 					<div id="pitch">pitch: 0</div>
 					<div id="roll">roll: 0</div>
 					<div id="yaw">yaw: 0</div>
 					<div id="height">height: 0m</div>
 				</div>
 			</div>
+
+
 			<div class="top-right">
 				<!-- top right - drone camera -->
 				<img class="image large-image" id="drone-camera" src="./assets/drone_placeholder.jpeg">
@@ -38,8 +43,8 @@
 					<div class="battery-container">
 						<div class="battery-top"></div>
 						<div class="battery-content">
-							<div class="battery-level"></div>
-							<div class="battery-stat">45%</div>
+							<div class="battery-level" id="battery"></div>
+							<div class="battery-stat" id="battery-level">45%</div>
 						</div>
 					</div>
 				</div>

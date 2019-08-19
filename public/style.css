@@ -144,3 +144,26 @@ img {
 .large-image {
 	height: 100%
 }
+
+.drone-axys {
+	position: relative;
+	height: 200px;
+	width: 300px;
+  color: white;
+	background-color: black;
+}
+
+.perspective {
+	perspective: 500px;
+	transform-style: preserve-3d;
+	display: grid;
+	text-align: center;
+	justify-content: center
+}
+
+.fill {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}

@@ -18,11 +18,22 @@
         const roll = document.getElementById('roll')
         const yaw = document.getElementById('yaw')
         const height = document.getElementById('height')
+        const battery = document.getElementById('battery');
+        const batteryLvl = document.getElementById('battery-level');
+        const droneAxys = document.getElementById('droneAxys')
 
         pitch.innerText = `pitch: ${data.pitch}`
         roll.innerText = `roll: ${data.roll}`
         yaw.innerText = `yaw: ${data.yaw}`
         height.innerText = `height: ${data.h}m`
+
+        battery.style.height = `${data.bat}%`;
+        battery.style.backgroundColor = data.bat < 50 ? 'orange' : 'green';
+
+        batteryLvl.innerText = `${data.bat}%`;
+
+        droneAxys.style.transform = `rotateX(${data.pitch}deg) rotateY(${data.roll * -1}deg) rotate(${data.yaw * -1}deg)`;
+
     })
 
     // commands service
@@ -35,6 +46,9 @@
     socket.on('other', (data) => {
         console.log('OTHER INCOMING')
 
+        const battery = document.getElementById('battery');
+        battery.style.height = `${data.energy}%`
+        battery.style.backgroundColor = data.energy < 50 ? 'orange' : 'green' 
     })
 })()
 
